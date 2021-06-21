@@ -1,27 +1,25 @@
-import React from "react";
+import { FC } from "react";
 
-import Head from "next/head";
-import Link from 'next/link'
+import { HeadPiece } from "components/Head";
+import { Nav } from "components/Nav";
 
-export default function Home() {
+const Home: FC = () => {
   return (
-    <div>
-      <Head>
-        <title>Meeting Keeper | Register Attendance</title>
-        <meta
-          name="description"
-          content="Register your attendance in a meeting."
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
+    <>
+      <HeadPiece
+        titleName="Meeting Keeper | Register Attendance"
+        description="Attend Meetings and let the meeting keeper know you were there."
+      />
       <main>
+        <Nav />
         <h1>Attend Meeting</h1>
 
-        <Link href="/classDetails">
-          <a>Class Management</a>
-        </Link>
+        <p>Use P2P to get an ID, then the user displays it.</p>
+
+        <p>sharedrop?</p>
       </main>
-    </div>
+    </>
   );
-}
+};
+
+export default Home;
