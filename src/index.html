@@ -1,9 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title><%= htmlWebpackPlugin.options.title %></title>
-</head>
-<body>
-  <main></main>
-</body>
+  <head>
+    <meta charset="utf8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A way to keep track of who attend your meetings"
+    />
+    <meta name="author" content="Andrew Gremlich" />
+    <meta name=”robots content=”index, nofollow">
+
+    <title>Meeting Keeper</title>
+
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <main id="meeting-keeper-root">
+      <!-- This will be for the robots to see and to have a default layout. -->
+      <!-- The script should over write this area. -->
+      <h1>Meeting Keeper</h1>
+
+      <p>Keep track of who comes to your meetings!</p>
+    </main>
+    <script src="./index.js"></script>
+  </body>
 </html>

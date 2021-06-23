@@ -34,3 +34,7 @@ yarn-error.log*
 .vercel
 .cache
 dist
+src/index.js
+src/index.css
+src/index.js.map
+src/index.css.map
